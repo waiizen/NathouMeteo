@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     function letsgo(){
         console.log("lets go");
-        var url = "http://api.openweathermap.org/data/2.5/weather?appid=fed326473295f84475a8b0d43d324973&q=Nantes";
+        var url = "http://api.openweathermap.org/data/2.5/weather?q=Nantes&appid=" + config.MY_KEY;
 
         fetch(url, {method: "GET"})
             .then(response => response.json())
