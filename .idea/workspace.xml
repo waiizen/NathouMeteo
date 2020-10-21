@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,6 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3bb3d85-735d-4f0d-b024-c59b5c09e9aa" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/city.list.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
@@ -33,6 +39,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -48,7 +55,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nathan\WebstormProjects\NathouMeteo" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -59,6 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603188679170</updated>
       <workItem from="1603188680234" duration="5378000" />
+      <workItem from="1603263987633" duration="9071000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1603206127464</created>
@@ -83,19 +98,25 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="628" y="298" key="EditFileWatcherDialog" timestamp="1603270348733">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="628" y="298" key="EditFileWatcherDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603270348733" />
     <state x="2472" y="239" key="Vcs.Push.Dialog.v2" timestamp="1603206132310">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2472" y="239" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1603206132310" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603205155115">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603271025480">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603271025480" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1603205155115" />
   </component>
 </project>
