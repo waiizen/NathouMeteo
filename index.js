@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $('.valider').click(ville);
 
+    var liste = [];
 
     $('input[name=choisirVille]').keyup(function(){
         if($('input[name=choisirVille]').val().length > 3){
@@ -8,18 +8,47 @@ $(document).ready(function(){
             var villeRecherche = format($('input[name=choisirVille]').val());
             $.get("city.list.json", function(data){
                 for(i in data) if(data[i].name.includes(villeRecherche)) creation(data[i].id, data[i].country, data[i].name);
+                affichage();
             });
         }
     })
 
     function clear(){
+        liste = [];
+        aSupprimer = [];
         $('.resultat').html('');
     }
 
-    function creation(id, pays, ville){
-        var resultat = '';
-        resultat += '<div>' + '<p hidden>' + id + '</p>' + '<p>' + pays + ' ' + ville + '</p></div>';
+    function tri(){
+        liste.sort();
+        for(var i = 1 ; i < liste.length ; i++){
+            var splt = liste[i].split(";");
+            var spltBefore = liste[i-1].split(";");
+            if(splt[0] == spltBefore[0] && splt[1] == spltBefore[1]){
+                liste.splice(i,1);
+            }
+        }
+    }
+
+    function affichage(){
+        tri();
+        var resultat = '<table class="table table-striped table-bordered table-hover">';
+        for(var i = 0 ; i < liste.length ; i++){
+            resultat += '<tr class="trVille">';
+            var splt = liste[i].split(";")
+            resultat += '<td>' + splt[0] + '</td>';
+            resultat += '<td>' + splt[1] + '</td>';
+            resultat += '<td style="display:none;" class="codeVille">' + splt[2] + '</td>';
+            resultat += '<td><button type="button" class="btn btn-primary">Primary</button></td>';
+            resultat += '</tr>';
+        }
+        resultat += '</table>';
         $('.resultat').append(resultat);
+    }
+
+    function creation(id, pays, ville){
+        var send = pays + ';' + ville + ';' + id
+        liste.push(send);
     }
 
     function format(text){

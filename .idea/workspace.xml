@@ -23,11 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3bb3d85-735d-4f0d-b024-c59b5c09e9aa" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/city.list.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/index.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +72,9 @@
       <option name="presentableId" value="Default" />
       <updated>1603188679170</updated>
       <workItem from="1603188680234" duration="5378000" />
-      <workItem from="1603263987633" duration="9071000" />
+      <workItem from="1603263987633" duration="9763000" />
+      <workItem from="1603371276533" duration="1189000" />
+      <workItem from="1603881445941" duration="9770000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1603206127464</created>
@@ -82,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603206127466</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1603274547174</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603274547175</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,9 +117,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="628" y="298" key="EditFileWatcherDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603270348733" />
-    <state x="2472" y="239" key="Vcs.Push.Dialog.v2" timestamp="1603206132310">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1603884577944">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="498" height="446" key="SwitcherDM/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603884577944" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1603274550034">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603274550034" />
     <state x="2472" y="239" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1603206132310" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603271025480">
       <screen x="0" y="0" width="1920" height="1040" />
