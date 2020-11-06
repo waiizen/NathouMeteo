@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>NathouMeteo</title>
@@ -12,17 +12,22 @@
 <body>
 <script src="index.js"></script>
 <div class="container-fluid">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalVille">
         Choisir une ville
     </button>
 
+    <div class="app">
+
+    </div>
+
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalVille" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">
                     <input type="text" id="choisirVille" name="choisirVille" placeholder="Veuillez entrer une Ville...">
-                    <div class="resultat"></div>
+                    <div class="resultat">
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
