@@ -9,6 +9,19 @@ $(document).ready(function(){
     var temperature, tempRessenti, tempMini, tempMax, ventVitesse, humidite = 0;
     var tempsTxt = '';
 
+    var colorSoleil = 'linear-gradient(322deg, rgba(255,139,80,1) 0%, rgba(255,210,80,1) 100%)';
+    var colorNuageux = 'linear-gradient(322deg, rgba(125,125,125,1) 0%, rgba(227,227,227,1) 80%)';
+    var colorPluie = 'linear-gradient(322deg, rgba(125,125,125,1) 34%, rgba(38,78,119,1) 100%)';
+    var colorSoleilNuageux = 'linear-gradient(322deg, rgba(125,125,125,1) 34%, rgba(255,244,160,1) 100%)';
+    var colorOrage = 'linear-gradient(322deg, rgba(21,18,124,1) 0%, rgba(155,109,238,1) 100%)';
+
+    var imgNeige = 'images/neige.png';
+    var imgNuageux = 'images/nuageux.png';
+    var imgOrage = 'images/orage.png';
+    var imgPluie = 'images/pluie.png';
+    var imgSoleil = 'images/soleil.png';
+    var imgSoleilNuageux = 'images/soleil_nuageux.png';
+
     // ##### PARTIE METEO D'UNE VILLE #####
 
     function meteo(){
@@ -30,7 +43,7 @@ $(document).ready(function(){
     }
 
     function affichageApp(){
-        let resultat = '<p>' + villeMeteo + ' ' + villeMeteoID + '<br/>'
+        /*let resultat = '<p>' + villeMeteo + ' ' + villeMeteoID + '<br/>'
             + 'temperature ' + temperature + '<br/>'
             + 'tempRessenti ' +  tempRessenti + '<br/>'
             + 'tempMini ' +  tempMini + '<br/>'
@@ -39,7 +52,44 @@ $(document).ready(function(){
             + 'humidite ' +  humidite + '<br/>'
             + 'tempsTxt ' +  tempsTxt + '</p>';
 
-        $('.app').append(resultat);
+        $('.app').append(resultat);*/
+        $('.chVille').html(villeMeteo);
+        $('.chDesc').html(tempsTxt);
+        $('.chTemp').html(temperature);
+        $('.chRessenti').html(tempRessenti);
+        $('.chVent').html(ventVitesse);
+        $('.chHumidite').html(humidite);
+        meteoDesc(tempsTxt);
+    }
+
+    function meteoDesc(meteoDescr){
+
+        if(meteoDescr == 'ciel dégagé'){
+            $('#meteo').css("background", colorSoleil);
+            $('.iconeMeteo').attr("src", imgSoleil);
+        } else if(meteoDescr == 'brume'){
+            $('#meteo').css("background", colorPluie);
+            $('.iconeMeteo').attr("src", imgPluie);
+        } else if(meteoDescr == 'couvert'){
+            $('#meteo').css("background", colorNuageux);
+            $('.iconeMeteo').attr("src", imgNuageux);
+        } else if(meteoDescr == 'peu nuageux'){
+            $('#meteo').css("background", colorSoleilNuageux);
+            $('.iconeMeteo').attr("src", imgSoleilNuageux);
+        } else if(meteoDescr == 'partiellement nuageux'){
+            $('#meteo').css("background", colorNuageux);
+            $('.iconeMeteo').attr("src", imgNuageux);
+        } else if(meteoDescr == 'légère pluie'){
+            $('#meteo').css("background", colorPluie);
+            $('.iconeMeteo').attr("src", imgPluie);
+        } else if(meteoDescr == 'nuageux'){
+            $('#meteo').css("background", colorNuageux);
+            $('.iconeMeteo').attr("src", imgNuageux);
+        } else if(meteoDescr == ''){
+
+        } else if(meteoDescr == ''){
+
+        }
     }
 
     // ##### PARTIE RECHERCHE D'UNE VILLE #####

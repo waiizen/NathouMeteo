@@ -1,5 +1,37 @@
+$colorSoleil: linear-gradient(322deg, rgba(255,139,80,1) 0%, rgba(255,210,80,1) 100%)
+$colorNuageux: linear-gradient(322deg, rgba(125,125,125,1) 0%, rgba(227,227,227,1) 80%)
+$colorPluie: linear-gradient(322deg, rgba(125,125,125,1) 34%, rgba(38,78,119,1) 100%)
+$colorSoleilNuageux: linear-gradient(322deg, rgba(125,125,125,1) 34%, rgba(255,244,160,1) 100%)
+$colorOrage: linear-gradient(322deg, rgba(21,18,124,1) 0%, rgba(155,109,238,1) 100%)
+
 .modal-body
   text-align: center
   & .resultat
     margin-top: 1%
     text-align: left
+
+#meteo
+  background: $colorSoleil
+  margin: 0 auto
+  margin-top: 20vh
+  border: 1px solid black
+  padding: 0%
+  color: white
+  border-radius: 100px 50px 100px 50px
+  overflow: auto
+  .iconeSearch
+    width: 5%
+  .iconeSearch:hover
+    cursor: pointer
+  .iconeMeteo
+    width: 20%
+    height: auto
+  #meteoUp
+    border-bottom: 1px solid black
+    text-align: center
+    padding-top: 7%
+  #meteoDown
+    text-align: center
+    color: black
+    background-color: mintcream
+    padding-bottom: 1%
